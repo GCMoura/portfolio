@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightslategray;
+    font-family: consolas;
+    height: 100vh;
+}
+.menu{
+    background: #fff;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+a{
+    color: teal;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.site-title,
+.site-subtitle{
+    color: whitesmoke;
+    text-align: center;
+}
+.site-subtitle{
+    font-style: italic;
+}
