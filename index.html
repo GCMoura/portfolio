@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5e33f91a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfólio</title>
 </head>
 <body>
     <header>
+      <div class="header">
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <h1 class="site-title">Gabriel Cornelio Moura</h1>
-        <h2 class="site-subtitle">Frontend Developer</h2>
+      </div>
     </header>
-    
+    <main>
+      <div class="main">
+          <h1 class="site-title">Gabriel Moura</h1>
+          <h3 class="site-subtitle">Desenvolvedor Frontend</h3>
+      </div>
+      <div class="about" id="sobre">
+        <div class="perfil">
+          <div class="text">
+            <h4>
+              Estudante de Tecnologia em Sistemas de Computação, formado em História e Mestre em Filosofia. Acredita que pode mudar o mundo e está em constante aprendizado para descobrir como.
+            </h4>
+          </div>
+          <div class="photo">
+
+          </div>
+        </div>
+      </div>
+      <div class="portfolio" id="projetos">
+        <aside class="aside">
+          <i class="fas fa-laptop fa-2x"></i>
+          Projetos
+          <nav class="portfolio-link">
+            <a href="#projetos" id="Book Search" class="project-link">My Library</a>
+            <a href="#projetos" id="Country Flag Game" class="project-link">Country Flag Game</a>
+            <a href="#projetos" id="Currency Converter" class="project-link">Currency Converter</a>
+            <a href="#projetos" id="Memory Card Game" class="project-link">Memory Card Game</a>
+            <a href="#projetos" id="Pomodoro Clock" class="project-link">Pomodoro Clock</a>
+            <a href="#projetos" id="Weather App" class="project-link">Weather App</a>
+          </nav>
+        </aside>
+        <div class="img">
+          <div>
+            <h4 class="site-info">Clique na imagem e experimente!</h4>
+            <a href="" class="site-link" target="blank"> <img src="" alt="portfolio" class="img-portfolio" id=""> </a>
+          </div>
+          
+          <img src="" alt="mobile" class="img-portfolio-mobile">
+        </div>
+      </div>
+      <div class="contact" id="contato">
+        <a href="https://github.com/GCMoura?tab=repositories" target="blank"><i class="fab fa-github-square fa-7x"></i></a>
+        <a href="https://www.linkedin.com/in/gabriel-moura-b45b90150/" target="blank"><i class="fab fa-linkedin fa-7x"></i></a>
+        <a href="https://twitter.com/gabrielcormoura" target="blank"><i class="fab fa-twitter-square fa-7x"></i></a>
+        
+        
+      </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
