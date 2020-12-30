@@ -1,58 +1,64 @@
-var projectLink = document.querySelectorAll('.project-link')
-var imagePortfolio = document.querySelector('.img-portfolio')
-var imagePortfolioMobile = document.querySelector('.img-portfolio-mobile')
-var siteLink = document.querySelector('.site-link')
-var siteInfo = document.querySelector('.site-info')
+//hamburguer-menu
+var hamburguer = document.querySelector('.menu-mobile')
+var menu = document.querySelector('.menu')
+var menuLink = document.querySelectorAll('.menu > a')
+var isOpen = false
 
-projectLink.forEach(link => {
-    link.addEventListener('click', function() {showProject(link.id)}, false)
-})
+hamburguer.addEventListener('click', hamburguerMenu, false)
 
-function showProject(name){
-    imagePortfolio.style.display = "block"
-    siteInfo.style.display = "block"
-    if(name == "Country Flag Game" || name == "Pomodoro Clock" || name == "Weather App"){ //possuem a versão mobile
-        imagePortfolio.style.marginLeft = "150px"
-        imagePortfolio.style.height = "500px"
-        imagePortfolio.style.width = "550px"
-        imagePortfolio.setAttribute('id', `${name}`)
-        imagePortfolio.setAttribute('src', `./img/${name}.png`)
-
-        imagePortfolioMobile.setAttribute('src', `./img/${name} Mobile.png`)
-        imagePortfolioMobile.style.display = "block"
-        imagePortfolioMobile.style.marginLeft = "-50px"
-        imagePortfolioMobile.style.height = "350px"
-        imagePortfolioMobile.style.width = "400px"
-
-    } else {
-        imagePortfolioMobile.style.display = "none"
-        imagePortfolio.style.marginLeft = "150px"
-        imagePortfolio.style.height = "500px"
-        imagePortfolio.style.width = "700px"
-        imagePortfolio.setAttribute('src', `./img/${name}.png`)
-        imagePortfolio.setAttribute('id', `${name}`)
-    }
+function hamburguerMenu() {
+  if(isOpen === false){
+    menu.classList.add("menu-open")
+    hamburguer.firstElementChild.classList.add('hamburguer-x')
+    isOpen = true
+  } else {
+    menu.classList.remove('menu-open')
+    hamburguer.firstElementChild.classList.remove('hamburguer-x')
+    isOpen = false
+  }
 }
 
-imagePortfolio.addEventListener('click', function(){showSite(imagePortfolio.id)}, false)
+menuLink.forEach(link => {
+  link.addEventListener('click', hamburguerMenu, false)
+})
 
-function showSite(id) {
-    if(id == "Book Search"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/BookSearch/')
-    }
-    if(id == "Country Flag Game"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/countryFlag/')
-    }
-    if(id == "Currency Converter"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/conversorJS/')
-    }
-    if(id == "Memory Card Game"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/memoryCardGame/')
-    }
-    if(id == "Pomodoro Clock"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/pomodoroClock/')
-    }
-    if(id == "Weather App"){
-        siteLink.setAttribute('href', 'https://gcmoura.github.io/weatherApp/')
-    }
+//header-shadow
+var header = document.querySelector("header");
+
+window.addEventListener("scroll", toggleHeader, false);
+
+function toggleHeader() {
+  if (window.pageYOffset > 60){
+    header.classList.add("header-shadow");
+  } else if (
+    window.pageYOffset <= 60 &&
+    header.classList.contains("header-shadow")
+  ) {
+    header.classList.remove("header-shadow");
+  }
+}
+
+//rain effect
+setInterval(createSnowFlake, 100);
+
+function createSnowFlake() {
+    const raindrop = document.createElement('i');
+
+    raindrop.classList.add('fas')
+    raindrop.classList.add('fa-tint')
+
+    raindrop.style.left = Math.random() * window.innerWidth - 30 + 'px'
+
+    raindrop.style.animationDuration = Math.random() * 3 + 5 + 's'
+        //entre 2 e 4 segundos
+
+    raindrop.style.opacity = Math.random();
+
+    raindrop.style.fontSize = Math.random() * 10 + 10
+
+    document.body.appendChild(raindrop);
+
+    setTimeout(() => {
+        raindrop.remove()
+    }, 5000)
 }

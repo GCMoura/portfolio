@@ -4,68 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b5e33f91a7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <title>Gabriel Moura</title>
 </head>
 <body>
-    <header>
-      <div class="header">
-        <nav class="menu">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <i class="fas fa-tint"></i>
+    <header class="header">
+      <div class="logo"><h1>G</h1></div>
+      <nav class="menu">
+        <a href="#home">1. Home</a>
+        <a href="#about">2. About</a>
+        <a href="#project">3. Projects</a>
+        <a href="#contact">4. Contact</a>
+      </nav>
+      <div class="menu-mobile">
+        <div class="hamburguer max-hamburguer">
+        </div> 
       </div>
     </header>
-    <main>
-      <div class="main">
-          <h1 class="site-title">Gabriel Moura</h1>
-          <h3 class="site-subtitle">Desenvolvedor Frontend</h3>
-      </div>
-      <div class="about" id="sobre">
-        <div class="perfil">
-          <div class="text">
-            <h4>
-              Estudante de Tecnologia em Sistemas de Computação, formado em História e Mestre em Filosofia. Acredita que pode mudar o mundo e está em constante aprendizado para descobrir como.
-            </h4>
-          </div>
-          <div class="photo">
+    <main class="main">
+      <section class="home" id="home">
+        <p id="intro">Hi, my name is</p>
+        <p id="name">Gabriel Moura</p>
+        <p id="job">I'm a front-end developer</p>
+        <p id="description">I enjoy creating things that live on the internet. My goal is to always build products that provide pixel-perfect, performant experiences.
+        </p>
+      </section>
 
-          </div>
+      <section class="about" id="about">
+        <div class="profile">
+          <span>About</span>
+          <div class="border"></div>
+          <img src="img/picture/photo.png" alt="photo">
+          <p>As a web developer I enjoy using my attention to detail, my unequivocal love for making things, and my work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.
+          </p>
         </div>
-      </div>
-      <div class="portfolio" id="projetos">
-        <aside class="aside">
-          <i class="fas fa-laptop fa-2x"></i>
-          Projetos
-          <nav class="portfolio-link">
-            <a href="#projetos" id="Book Search" class="project-link">My Library</a>
-            <a href="#projetos" id="Country Flag Game" class="project-link">Country Flag Game</a>
-            <a href="#projetos" id="Currency Converter" class="project-link">Currency Converter</a>
-            <a href="#projetos" id="Memory Card Game" class="project-link">Memory Card Game</a>
-            <a href="#projetos" id="Pomodoro Clock" class="project-link">Pomodoro Clock</a>
-            <a href="#projetos" id="Weather App" class="project-link">Weather App</a>
-          </nav>
-        </aside>
-        <div class="img">
-          <div>
-            <h4 class="site-info">Clique na imagem e experimente!</h4>
-            <a href="" class="site-link" target="blank"> <img src="" alt="portfolio" class="img-portfolio" id=""> </a>
+      </section>
+
+      <section class="project" id="project">
+        <div class="project-title">
+          <span>Projects</span>
+          <div class="border"></div>
+        </div>
+        
+        <div class="project-section">
+          <img src="img/project/bon-appetit_page.png" alt="Bon-Appetit">
+          <div class="project-area">
+            <p class="label">Featured Project</p>
+            <p class="title">Bon Appetit</p>
+            <p class="project-description">An application for register, store and search your best recipes. Including photo and how to make them. Created using HTML5, CSS3 and Javascript with ReactJS for the front-end, and NodeJS for the back end.</p>
+            <p class="project-tech">HTML5 CSS3 Javascript ReactJS NodeJS</p>
+            <p class="links">
+              <a href="https://github.com/GCMoura/bon-appetit" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+              <a href="https://bon-appetit-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+            </p>
           </div>
+        </div> 
+        <br>
+        <div class="project-section">
+          <img src="img/project/mentor-do-bem_page.png" alt="Mentor do Bem">
+          <div class="project-area">
+            <p class="label">Featured Project</p>
+            <p class="title">Mentor do Bem</p>
+            <p class="project-description">This project aims to promote the exchange of knowledge about technologies. This application intend to connect people who want to learn some technology with people who want to teach a little of your knowledge. Perhaps, the distance between you and the knowledge is just one click away.</p>
+            <p class="project-tech">HTML5 CSS3 Javascript ReactJS Typescript NodeJS</p>
+            <p class="links">
+              <a href="https://github.com/GCMoura/mentor-do-bem-web" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+              <a href="https://mentor-do-bem-web.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+            </p>
+          </div>
+        </div> 
+        <br>   
+        <div class="project-section">
+          <img src="img/project/rijksmuseum_page.png" alt="Rijksmuseum">
+          <div class="project-area">
+            <p class="label">Featured Project</p>
+            <p class="title">Rijksmuseum</p>
+            <p class="project-description">The goal of this application is to promote access to masterpieces, especially paintings, from the Rijksmuseum of Amsterdam in Netherlands.</p>
+            <p class="project-tech">HTML5 CSS3 Javascript API</p>
+            <p class="links">
+              <a href="https://github.com/GCMoura/rijksmuseum" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+              <a href="https://rijksmuseum-amsterdam.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+            </p>
+          </div>
+        </div>  
+
+        <p class="another-title">Another Projects</p>
+        <div class="another-project">
+
+          <div class="project-box">
+            <div class="project-header">
+              <a href="https://gcmoura.github.io/countries-flags/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+              <a href="https://github.com/GCMoura/countries-flags" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+            </div>
+            <p class="another-title-small">Country Flag Game</p>
+            <p class="another-description">The purpose of this application is teaching the countries flags through a fun game.</p>
+            <p class="another-techs">HTML5 CSS3 Javascript API</p>
+          </div>
+
+          <div class="project-box">
+            <div class="project-header">
+              <a href="https://gcmoura.github.io/find-movie/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+              <a href="https://github.com/GCMoura/find-movie" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+            </div>
+            <p class="another-title-small">Find Movie</p>
+            <p class="another-description">In this page you can search and find the data of your favorite movie with a simple word.</p>
+            <p class="another-techs">HTML5 CSS3 Javascript API</p>
+          </div>
+
+          <div class="project-box">
+            <div class="project-header">
+              <a href="https://gcmoura.github.io/pomodoro-timer/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+              <a href="https://github.com/GCMoura/pomodoro-timer" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+            </div>
+            <p class="another-title-small">Pomodoro Clock</p>
+            <p class="another-description">You choose the time of working in the green arrow and choose the relax time in the red arrow.</p>
+            <p class="another-techs">HTML5 CSS3 Javascript</p>
+          </div>
+
+          <div class="project-box">
+            <div class="project-header">
+              <a href="https://gcmoura.github.io/weatherApp/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-location-arrow"></i>
+              </a>
+              <a href="https://github.com/GCMoura/weatherApp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fab fa-github"></i>
+              </a>
+            </div>
+            <p class="another-title-small">Weather App</p>
+            <p class="another-description">The goal of this application is show the current weather of any city around the world.</p>
+            <p class="another-techs">HTML5 CSS3 Javascript API</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-section">
+          <span>Contact</span>
+          <div class="border"></div>
+        </div>
+        <div class="icons">
           
-          <img src="" alt="mobile" class="img-portfolio-mobile">
+          <a href="https://github.com/GCMoura" target="_blank">
+            <i class="fab fa-github-square"></i>
+            Github
+          </a>
+          
+          <a href=" https://www.linkedin.com/in/gabriel-moura-b45b90150/ " target="_blank">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+          <a href="mailto:gabrielmoura29@gmail.com">
+            <i class="fas fa-envelope"></i>
+            Gmail
+          </a>
+          
+          <a href="https://twitter.com/gabrielcormoura" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+            Twitter
+          </a>
         </div>
-      </div>
-      <div class="contact" id="contato">
-        <a href="https://github.com/GCMoura?tab=repositories" target="blank"><i class="fab fa-github-square fa-7x"></i></a>
-        <a href="https://www.linkedin.com/in/gabriel-moura-b45b90150/" target="blank"><i class="fab fa-linkedin fa-7x"></i></a>
-        <a href="https://twitter.com/gabrielcormoura" target="blank"><i class="fab fa-twitter-square fa-7x"></i></a>
-        
-        
-      </div>
+      </section>
     </main>
+    <footer class="footer">
+
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>

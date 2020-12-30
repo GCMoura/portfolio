@@ -1,0 +1,37 @@
+:root{
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #172a45;
+  --lightest-navy: #303C55;
+  --navy-shadow: rgba(2,12,27,3);
+  --slate: #8892b0;
+  --shadow-slate: #a8b2d1;
+  --light-slate: #ccd6f6;
+  --orange: #FF480A;
+  --light-orange: #FF7040; 
+  --shadow-orange:  #fcc7b6;
+  --white: #e6f1ff;
+
+  --font-sans: "Calibre","San Francisco","SF Pro Text",sans-serif;
+  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+}
+
+html, body, #root {
+  height: 100vh;
+  width: 90vw;
+}
+
+
+@media (min-width: 770px){
+  :root {
+    font-size: 62.5%;
+  }
+}
