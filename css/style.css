@@ -1,5 +1,5 @@
 .fa-tint {
-  color: var(--shadow-slate);
+  /* color: var(--shadow-slate); */
   animation: fall linear forwards;
   position: absolute;
   top: -20px;
@@ -133,7 +133,7 @@
 }
 /*home-page*/
 .home{
-  height: 70%;
+  height: 100%;
   width: 100%;
   background: var(--navy);
 
@@ -166,52 +166,12 @@
   text-align: justify;
   font-family: var(--font-mono);
 }
-/* waves */
-.section-waves{
-  height: 20%;
-  margin-top: -5px;
-  background: var(--navy);  
-}
-.waves{
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  right: 0;
- }
- .wave-1{
-  animation: animationWave1 3s ease-in-out infinite alternate;
-}
-
-.wave-2{
- animation: animationWave2 3s 1.2s ease-in-out infinite alternate;
-}
-
-.wave-3{
- animation: animationWave3 3s 0.7s ease-in-out infinite alternate;
-}
-
- @keyframes animationWave1{
- from {
-   transform: translatex(1200px);
- }
-}
-
-@keyframes animationWave2{
- from {
-   transform: translatex(1200px);
- }
-}
-
-@keyframes animationWave3{
- from {
-   transform: translatex(-2500px);
- }
-}
 /*about-page*/
 .about{
   height: 100%;
   width: 100%;
   background: var(--navy);
+  margin-top: -5px;
 }
 .profile{
   display: flex;

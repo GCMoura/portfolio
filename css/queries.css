@@ -37,14 +37,7 @@
   .home #description{
     font-size: 2.7rem;
   }
-  .div-waves{
 
-  }
-  .waves{
-
-    height: 70%;
-    width: 100%;
-  }
   .about{
     display: flex;
     flex-direction: column;
@@ -174,6 +167,31 @@
   }
   .project-box .another-description{
     font-size: 1.8rem;
+    transition: all 1s ease;
+  }
+  .project-box #one:hover{
+    background-image: url('/img/project/countries-flags_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #two:hover{
+    background-image: url('/img/project/find-movie_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #three:hover{
+    background-image: url('/img/project/pomodoro-clock_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #four:hover{
+    background-image: url('/img/project/weather-app_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
   }
   .project-box .another-techs{
     font-size: 1.2rem;
