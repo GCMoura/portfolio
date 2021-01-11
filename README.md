@@ -1,6 +1,6 @@
 ## Projects
 
-* Rijksmuseum - API - https://rijksmuseum-amsterdam.vercel.app/
+* Rijksmuseum - API -https://rijksmuseum-2rjkqscps.vercel.app/
 * bon-appetit - REACT - https://bon-appetit-zeta.vercel.app/
 * mentor do bem - REACT - https://mentor-do-bem-web.vercel.app/
 * country-flags - API - https://gcmoura.github.io/countries-flags/
