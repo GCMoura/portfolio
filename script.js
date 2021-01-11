@@ -44,16 +44,6 @@ setInterval(createSnowFlake, 100);
 
 function createSnowFlake() {
     const raindrop = document.createElement('i');
-
-    var logo = document.querySelector('.logo')
-    var orange = "#FF7040"
-    var slate = "#a8b2d1"
-    var flagLogo = true
-
-    logo.addEventListener('click', () => {
-      var color = flagLogo ? slate : orange
-      raindrop.style.color = color
-    })
     
     raindrop.classList.add('fas')
     raindrop.classList.add('fa-tint')

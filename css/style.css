@@ -1,5 +1,5 @@
 .fa-tint {
-  /* color: var(--shadow-slate); */
+  color: var(--shadow-slate);
   animation: fall linear forwards;
   position: absolute;
   top: -20px;
@@ -33,7 +33,7 @@
   width: 50%;
 }
 .logo h1{
-  color: var(--orange);
+  
   border: 2px solid var(--orange);
   border-radius: 5px;
   padding: 5px 15px;
@@ -44,6 +44,10 @@
   transform: rotate(360deg);
   color: var(--light-orange);
   border: 2px solid var(--light-orange)
+}
+.logo a {
+  text-decoration: none;
+  color: var(--orange);
 }
 /*nav*/
 .menu{
