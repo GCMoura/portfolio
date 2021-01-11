@@ -37,6 +37,14 @@
   .home #description{
     font-size: 2.7rem;
   }
+  .div-waves{
+
+  }
+  .waves{
+
+    height: 70%;
+    width: 100%;
+  }
   .about{
     display: flex;
     flex-direction: column;

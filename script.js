@@ -39,18 +39,18 @@ function toggleHeader() {
 }
 
 //rain effect
+
 setInterval(createSnowFlake, 100);
 
 function createSnowFlake() {
     const raindrop = document.createElement('i');
-
+    
     raindrop.classList.add('fas')
     raindrop.classList.add('fa-tint')
 
     raindrop.style.left = Math.random() * window.innerWidth - 30 + 'px'
 
-    raindrop.style.animationDuration = Math.random() * 3 + 5 + 's'
-        //entre 2 e 4 segundos
+    raindrop.style.animationDuration = Math.random() * 3 + 5.8 + 's'
 
     raindrop.style.opacity = Math.random();
 
@@ -60,5 +60,6 @@ function createSnowFlake() {
 
     setTimeout(() => {
         raindrop.remove()
-    }, 5000)
+    }, 4500)
+
 }
