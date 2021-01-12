@@ -359,6 +359,7 @@
   font-family: var(--font-mono);
   padding: 0px 10px;
   text-align: left;
+  transition: all 1s ease;
 }
 .project-box .another-techs{
   color: var(--shadow-slate);
@@ -369,26 +370,27 @@
   padding: 0px 10px;
   float: right;
 }
-.project-box #one:hover{
-  background-image: url('/img/project/countries-flags_page.png');
+
+.project-box .one:hover{
+  background-image: url('../img/another-project/countries-flags_page.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
 }
-.project-box #two:hover{
-  background-image: url('/img/project/find-movie_page.png');
+.project-box .two:hover{
+  background-image: url('../img/another-project/find-movie_page.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
 }
-.project-box #three:hover{
-  background-image: url('/img/project/pomodoro-clock_page.png');
+.project-box .three:hover{
+  background-image: url('../img/another-project/pomodoro-clock_page.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
 }
-.project-box #four:hover{
-  background-image: url('/img/project/weather-app_page.png');
+.project-box .four:hover{
+  background-image: url('../img/another-project/weather-app_page.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;

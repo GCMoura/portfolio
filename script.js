@@ -61,5 +61,13 @@ function createSnowFlake() {
     setTimeout(() => {
         raindrop.remove()
     }, 5000)
-
 }
+
+//hover effect
+
+var description = document.querySelector('#one')
+
+// description.addEventListener('mouseover', () => {
+//   description.style.backgroundImage = url("/img/another-project/countries-flags_page.png")
+//   console.log('over')
+// })
