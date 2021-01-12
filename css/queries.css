@@ -37,6 +37,7 @@
   .home #description{
     font-size: 2.7rem;
   }
+
   .about{
     display: flex;
     flex-direction: column;
@@ -99,18 +100,18 @@
     max-width: 70%;
     margin-bottom: 20px;
   }
-  .project-section img{
+  .project-section a img{
     align-items: flex-start;
-    width: 55%;
+    width: 100%;
     opacity: 0.2;
     transition: all 1s ease-in-out;
   }
-  .project-section img:hover{
+  .project-section a img:hover{
     opacity: 1;
   }
   .project-area{
     margin-top: 0px;
-    max-width: 60%;
+    width: 100%;
   }
   .project-area .label{
     font-size: 2rem;
@@ -166,6 +167,31 @@
   }
   .project-box .another-description{
     font-size: 1.8rem;
+    transition: all 1s ease;
+  }
+  .project-box #one:hover{
+    background-image: url('/img/project/countries-flags_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #two:hover{
+    background-image: url('/img/project/find-movie_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #three:hover{
+    background-image: url('/img/project/pomodoro-clock_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+  }
+  .project-box #four:hover{
+    background-image: url('/img/project/weather-app_page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
   }
   .project-box .another-techs{
     font-size: 1.2rem;

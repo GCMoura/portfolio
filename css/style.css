@@ -1,5 +1,5 @@
 .fa-tint {
-  color: var(--white);
+  color: var(--shadow-slate);
   animation: fall linear forwards;
   position: absolute;
   top: -20px;
@@ -33,7 +33,7 @@
   width: 50%;
 }
 .logo h1{
-  color: var(--orange);
+  
   border: 2px solid var(--orange);
   border-radius: 5px;
   padding: 5px 15px;
@@ -44,6 +44,10 @@
   transform: rotate(360deg);
   color: var(--light-orange);
   border: 2px solid var(--light-orange)
+}
+.logo a {
+  text-decoration: none;
+  color: var(--orange);
 }
 /*nav*/
 .menu{
@@ -171,6 +175,7 @@
   height: 100%;
   width: 100%;
   background: var(--navy);
+  margin-top: -5px;
 }
 .profile{
   display: flex;
@@ -216,6 +221,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: -5px;
   background: var(--navy);
 }
 .project-title{
@@ -247,11 +253,18 @@
   margin-top: 30px;
   max-width: 100%;
 }
-.project-section img{
-  width: 80%;
-  opacity: 0.2;
+.project-section a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.project-section img:active{
+.project-section a img{
+  width: 80%;
+  opacity: 0.3;
+}
+.project-section a img:active{
   opacity: 1;
 }
 .project-area{
@@ -362,7 +375,7 @@
   height: 100%;
   width: 100%;
   background: var(--navy);
-
+  margin-top: -5px;
   display: flex;
   flex-direction: column;
   align-items: center;
