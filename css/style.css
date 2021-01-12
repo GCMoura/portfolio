@@ -358,7 +358,7 @@
   margin-bottom: 10px;
   font-family: var(--font-mono);
   padding: 0px 10px;
-  text-align: center;
+  text-align: left;
 }
 .project-box .another-techs{
   color: var(--shadow-slate);
