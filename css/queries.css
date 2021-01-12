@@ -170,25 +170,25 @@
     transition: all 1s ease;
   }
   .project-box #one:hover{
-    background-image: url('/img/project/countries-flags_page.png');
+    background-image: url('img/project/countries-flags_page.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: transparent;
   }
   .project-box #two:hover{
-    background-image: url('/img/project/find-movie_page.png');
+    background-image: url('img/project/find-movie_page.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: transparent;
   }
   .project-box #three:hover{
-    background-image: url('/img/project/pomodoro-clock_page.png');
+    background-image: url('img/project/pomodoro-clock_page.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: transparent;
   }
   .project-box #four:hover{
-    background-image: url('/img/project/weather-app_page.png');
+    background-image: url('img/project/weather-app_page.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: transparent;
