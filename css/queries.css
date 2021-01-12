@@ -100,18 +100,18 @@
     max-width: 70%;
     margin-bottom: 20px;
   }
-  .project-section img{
+  .project-section a img{
     align-items: flex-start;
-    width: 55%;
+    width: 100%;
     opacity: 0.2;
     transition: all 1s ease-in-out;
   }
-  .project-section img:hover{
+  .project-section a img:hover{
     opacity: 1;
   }
   .project-area{
     margin-top: 0px;
-    max-width: 60%;
+    width: 100%;
   }
   .project-area .label{
     font-size: 2rem;

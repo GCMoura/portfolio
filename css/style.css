@@ -253,11 +253,18 @@
   margin-top: 30px;
   max-width: 100%;
 }
-.project-section img{
-  width: 80%;
-  opacity: 0.2;
+.project-section a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.project-section img:active{
+.project-section a img{
+  width: 80%;
+  opacity: 0.3;
+}
+.project-section a img:active{
   opacity: 1;
 }
 .project-area{
