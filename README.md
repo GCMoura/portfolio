@@ -15,7 +15,7 @@ I hope you enjoy!
 <img src="img/project/landing_page.png" >
 
 
-[Portfolio]()
+[Portfolio](https://gcmoura.github.io/portfolio/)
 
 
 ## Contributing
