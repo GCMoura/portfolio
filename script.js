@@ -37,37 +37,3 @@ function toggleHeader() {
     header.classList.remove("header-shadow");
   }
 }
-
-//rain effect
-
-setInterval(createSnowFlake, 100);
-
-function createSnowFlake() {
-    const raindrop = document.createElement('i');
-    
-    raindrop.classList.add('fas')
-    raindrop.classList.add('fa-tint')
-
-    raindrop.style.left = Math.random() * window.innerWidth - 30 + 'px'
-
-    raindrop.style.animationDuration = Math.random() * 3 + 5.8 + 's'
-
-    raindrop.style.opacity = Math.random();
-
-    raindrop.style.fontSize = Math.random() * 10 + 10
-
-    document.body.appendChild(raindrop);
-
-    setTimeout(() => {
-        raindrop.remove()
-    }, 5000)
-}
-
-//hover effect
-
-var description = document.querySelector('#one')
-
-// description.addEventListener('mouseover', () => {
-//   description.style.backgroundImage = url("/img/another-project/countries-flags_page.png")
-//   console.log('over')
-// })
